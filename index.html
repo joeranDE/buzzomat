@@ -15,24 +15,145 @@
 
 <script language="JavaScript">
 var parts1 = [
-"Ein Mann ä ü ß,",
-"Eine Frau,"
+"Ein Mann,",
+"Eine Frau,",
+"Ein Programmierer,",
+"Eine Schriftstellerin,",
+"Ein Airbnb-Fan,",
+"Ein Bayern-München-Fan,",
+"Eine Grundschul-Lehrerin,",
+"Ein Veganer,",
+"Eine Altenpflegerin,",
+"Ein gealterter Punk,",
+"Eine tagesschau-Sprecherin,",
+"Ein Möchtergern YouTube-Influencer,",
+"Eine schwangere Blondine,",
+"Ein Hochleistungssportler,",
+"Ein auffällig kleiner Mann,",
+"Ein 14-jähriges Mädchen,",
+"Ein fanatischer Stark-Trek-Fan,",
+"Eine katholische Nonne,",
+"Ein buddhistischer Mönch,",
+"Eine ältere Eisverkäuferin,",
+"Ein Kriegsveteran,",
+"Eine Tischlerin,",
+"Ein Dachdecker aus Bayern,",
+"Ein Versicherungvertreter,",
+"Eine Taxifahrerin,",
+"Eine norddeutsche Schmuckverkäuferin,",
+"Ein Ornithologe,",
+"Eine Nachwuchsforscherin,",
+"Eine politische Aktivistin,",
+"Ein Mitglied des Bundestags,",
+"Ein Europaskeptiker,",
+"Ein Top-Model,",
+"Eine Millionenerbin,",
+"Ein passionierter Gärtner,",
+"Ein Feinschmecker aus Köln,",
+"Eine Berliner Busfahrerin,"
 ];
 
 var parts2 = [
 "verdammt gut aussehend,",
-"von Herzen altruistisch,"
+"von Herzen altruistisch,",
+"stets akkurat gekleidet,",
+"ausgeglichener Charakter,",
+"ein charismatischer Mensch,",
+"authentische Persönlichkeit,",
+"sehr charmant,",
+"ehrlich, ehrgeizig, zielstrebig,",
+"fair und fürsorglich,",
+"höchst idealistisch,",
+"intelligent und witzig,",
+"meist witzig, bisweilen jovial,",
+"kompetent und konsequent,",
+"kreativ, kooperativ und innovativ,",
+"flexibel und belastbar,",
+"begeisterungsfähig,",
+"teamfähig und kommunikativ,",
+"höchst kompetent,",
+"mit kultivierten Manieren,",
+"liebenswert und symphatisch,",
+"locker und spontan,",
+"offen für Neues,",
+"akribisch in Arbeitsdingen,",
+"loyal gegenüber Freunden,",
+"ernährt sich asketisch,",
+"grundsätzlich optimistisch,",
+"sehr romantisch veranlagt,",
+"bescheiden und bodenständig,",
+"emanzipiert und eigensinnig,",
+"ruhig und robust,",
+"intellektuell und belesen,",
+"energischs, tolz und emotional,",
+"konservativ,",
+"auf Nachhaltigkeit bedacht,",
+"neugierig und lernwillig,"
  ];
  
 var parts3 = [
 "aber ziemlich schwer von Begriff",
-"aber leider eher cholerisch"
+"aber leider eher cholerisch",
+"aber dummerweise extrem naiv",
+"aber wirkt arrogant",
+"aber schnell aufbrausend",
+"aber enorm egozentrisch",
+"aber schrecklich eifersüchtig",
+"aber offensichtlich oberflächlich",
+"aber sehr wortkarg",
+"aber im Kern narzisstisch",
+"aber bisweilen skrupellos",
+"aber schüchtern",
+"aber schnell aufbrausend",
+"aber häufig nicht ganz ehrlich",
+"aber pedantisch",
+"aber sehr selbstkritisch",
+"aber päpstlicher als der Papst",
+"aber nach Feierabend langweilig",
+"aber unfreundlich zu Kindern",
+"aber ängstlich bei Neuem",
+"aber sehr eitel",
+"aber unnahbar und kalt",
+"aber mit dekadentem Lebensstil"
  ];
  
 var parts4 = [
 "(typisch für die #GenerationY)",
-"(allgemein ambivalent ausgerichtet)"
-
+"(allgemein ambivalent ausgerichtet)",
+"(zweiter Vorname: Wankelmut)",
+"(denkt gerne drei mal nach)",
+"(ein Sinnbild für das 21. Jahrhundert)",
+"(sagen wir: #Elite)",
+"(hat keinen Fernseher)",
+"(#Tierfreund)",
+"(sieht sich selbst ganz anders)",
+"(im Zeugenschutzprogramm des BND)",
+"(wird vom Verfassungsschutz beobachtet)",
+"(leidet extrem unter #Heuschnupfen)",
+"(mit #Migrationshintergrund)",
+"(ohne #Migrationshintergrund)",
+"(jung geblieben)",
+"(geboren in Saarbrücken)",
+"(geboren in Oer-Erkenschwick)",
+"(spielt gerne Golf)",
+"(hat 3 Meerschweinchen)",
+"(hat sehr kurze Haare)",
+"(hat sehr lange Haare)",
+"(trägt heimlich eine Perücke)",
+"(trägt meist Sonnenbrille)",
+"(hat ein Hörgerät)",
+"(fährt lieber #Bahn als Auto)",
+"(hat Angst vorm Fliegen)",
+"(eigentlich sehr sensibel)",
+"(würde gerne auswandern)",
+"(total temperamentvoll)",
+"(hatte eine Nahtoderfahrung)",
+"(schreibt 400 WhatsApp-Nachrichten pro Tag)",
+"(noch Jungfrau)",
+"(wählt seit 1998 #FDP)",
+"(sexuell unerfahren)",
+"(hat keine Freunde)",
+"(mit skurrilen Hobbys)"
  ];
 </script>
 </head>
@@ -305,7 +426,7 @@ var parts4 = [
             (machine4.active)
            );
 
-           window.open("https://twitter.com/intent/tweet?text="+encodeURIComponent(text+' (by @PersonaErfinder) '+window.location.href),'twitter','width=500,height=350');
+           window.open("https://twitter.com/intent/tweet?text="+encodeURIComponent(text+' --- (Person erfunden by @PersonaErfinder) '+window.location.href),'twitter','width=500,height=350');
         });
 
         $(document).keydown(function (e){ 
@@ -323,7 +444,9 @@ var parts4 = [
 
 
 		</script>
-    <div style="text-align:center;font-size:80%;padding-bottom:20px">ein Ausprobierprojekt von Jöran. Basierend auf den Buzzomat, ein Projekt von 2016 von <a href="http://www.joeran.de/lernbuzz/" target="_blabk">J&K</a> und der <a href="http://phsz.ch" target="_blank">Pädagogischen Hochschule Schwyz</a></br> gebaut mit <a href="https://github.com/josex2r/jQuery-SlotMachine" target="_blank">jQuery-SlotMachine</a></div>
+    <div style="text-align:center;font-size:80%;padding-bottom:20px"><h2>Der <i>Persona-o-mat</i> erfindet 1.874.161 verschiedene Personen</h2>
+<h3>ideal für Brainstormerinnen und Buchautoren, für Design Thinker und Drehbuchschreiberinnen</h3>
+<p>Ein Ausprobierprojekt von Jöran im Sommer 2018. Entstanden als Fork des <a href="http://buzzomat.de" target="_blank">Buzzomat</a>, ein Projekt von 2016 von <a href="http://www.joeran.de/lernbuzz/" target="_blabk">J&K</a> und der <a href="http://phsz.ch" target="_blank">Pädagogischen Hochschule Schwyz</a></br> gebaut mit <a href="https://github.com/josex2r/jQuery-SlotMachine" target="_blank">jQuery-SlotMachine</a></p></div>
     
 </body>
 </html>
